@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="center" style="-fx-background-color: #8C82FC;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geekbrains.j2lesson4.Controller">
+    <TextArea fx:id="textArea" editable="false" focusTraversable="false" style="-fx-background-color: #A8E6CF;" VBox.vgrow="ALWAYS">
+      <font>
+         <Font size="18.0" />
+      </font></TextArea>
+    <HBox>
+        <TextField fx:id="tfield" maxHeight="30" minHeight="30" onAction="#btnSendOn" promptText="Введите сюда свое сообщение" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets top="10.0" />
+         </HBox.margin></TextField>
+        <Button onAction="#btnSendOn" text="Отправить">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <HBox.margin>
+            <Insets top="10.0" />
+         </HBox.margin></Button>
+    </HBox>
+   <padding>
+      <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+   </padding>
+</VBox>
